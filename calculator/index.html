@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator card">
+            <input type="text" class="calculator-screen" id="myText"  value="" />
+            <div class="calculator-keys">
+                <button onclick="setPlus()" type="button" class="operator btn btn-primary shadow" value="+">+</button>
+                <button onclick="setMinus()" type="button" class="operator btn btn-primary shadow" value="-">-</button>
+                <button onclick="setMultiple()" type="button" class="operator btn btn-primary shadow" value="*">&times;</button>
+                <button onclick="setDivide()" type="button" class="operator btn btn-primary shadow" value="/">&divide;</button>
+    
+                <button onclick="numClicks(7)" type="button" value="7" class="btn btn-light shadow">7</button>
+                <button onclick="numClicks(8)" type="button" value="8" class="btn btn-light shadow">8</button>
+                <button onclick="numClicks(9)" type="button" value="9" class="btn btn-light shadow">9</button>
+    
+    
+                <button onclick="numClicks(4)" type="button" value="4" class="btn btn-light shadow">4</button>
+                <button onclick="numClicks(5)" type="button" value="5" class="btn btn-light shadow">5</button>
+                <button onclick="numClicks(6)" type="button" value="6" class="btn btn-light shadow">6</button>
+    
+    
+                <button onclick="numClicks(1)" type="button" value="1" class="btn btn-light shadow">1</button>
+                <button onclick="numClicks(2)" type="button" value="2" class="btn btn-light shadow">2</button>
+                <button onclick="numClicks(3)" type="button" value="3" class="btn btn-light shadow">3</button>
+    
+    
+                <button onclick="numClicks(0)" type="button" value="0" class="btn btn-light shadow">0</button>
+                <button onclick="numClicks('.')" type="button" class="decimal btn btn-secondary shadow" value=".">.</button>
+                <button onclick="clearButton()" type="button" class="all-clear btn btn-danger btn-sm shadow" value="all-clear">AC</button>
+    
+                <button onclick="equalButton()" type="button" class="equal-sign btn btn-warning shadow" value="=">=</button>
+    
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
